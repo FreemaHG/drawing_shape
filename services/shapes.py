@@ -2,6 +2,7 @@ from logger import logger
 
 from shapes.circle import Circle
 from shapes.rectangle import Rectangle
+from shapes.square import Square
 
 
 class ShapesCreateService:
@@ -26,6 +27,15 @@ class ShapesCreateService:
         :return: объект прямоугольника
         """
         return Rectangle(**rectangle_data)
+
+    @classmethod
+    def __square(cls, square_data: dict) -> Square:
+        """
+        Метод создает и возвращает экземпляр прямоугольника
+        :param square_data: словарь с параметрами квадрата
+        :return: объект квадрата
+        """
+        return Square(**square_data)
 
     @classmethod
     def create_figures(cls, data: dict) -> list:
@@ -56,5 +66,11 @@ class ShapesCreateService:
                 if rectangle_data:
                     rectangle = cls.__rectangle(rectangle_data=rectangle_data)
                     figures_list.append(rectangle)
+
+                square_data = figure.get("Square", None)
+
+                if square_data:
+                    square = cls.__square(square_data=square_data)
+                    figures_list.append(square)
 
         return figures_list
