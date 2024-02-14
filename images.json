@@ -1,0 +1,67 @@
+{
+  "image_size": {
+    "X_length": 250,
+    "Y_length": 250
+  },
+  "figures": [
+    {
+      "Circle": {
+        "X_center": 45,
+        "Y_center": 20,
+        "Radius": 9
+      }
+    },
+    {
+      "Rectangle": {
+        "X_upper_left": 187,
+        "Y_upper_left": 218,
+        "X_lower_right": 230,
+        "Y_lower_right": 202,
+        "Color": "blue"
+      }
+    },
+    {
+      "Rectangle": {
+        "X_upper_left": 211,
+        "Y_upper_left": 214,
+        "X_lower_right": 300,
+        "Y_lower_right": 206,
+        "transparency": "off"
+      }
+    },
+    {
+      "Square": {
+        "X_upper_left": 40,
+        "Y_upper_left": 50,
+        "side_length": 10,
+        "line_width": 3,
+        "Color": "yellow"
+      }
+    },
+    {
+      "Triangle": {
+        "Shape": [
+          {
+            "Point": {
+              "X": 10,
+              "Y": 15
+            }
+          },
+          {
+            "Point": {
+              "X": 20,
+              "Y": 35
+            }
+          },
+          {
+            "Point": {
+              "X": 80,
+              "Y": 45
+            }
+          }
+        ],
+        "Color": "green"
+      }
+    }
+  ]
+}
