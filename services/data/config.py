@@ -17,8 +17,7 @@ class ConfigSaveService:
         data = {}
 
         try:
-            # TODO Поменять файл!!!
-            data = read_json_file(path="./config-dev.json")
+            data = read_json_file(path="./config.json")
 
         except FileNotFoundError:
             logger.error("файл с конфигурацией не найден")
