@@ -1,0 +1,17 @@
+{
+  "image_size": {
+    "X_length": 250,
+    "Y_length": 250
+  },
+  "figures": [
+    {
+      "Circle": {
+        "X_center": 45,
+        "Y_center": 20,
+        "Radius": 9,
+        "line_width": 5,
+        "Color": "red"
+      }
+    }
+  ]
+}
